@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicCatalog | University Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://img.icons8.com/color/96/000000/music-robot.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo"><i class="fas fa-music"></i> MusicCatalog</h1>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search artists or genres...">
+                <button id="searchBtn"><i class="fas fa-search"></i> Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="hero">
+            <h2>Popular Artists</h2>
+            <p class="subtitle">Click on any artist to view their songs and albums</p>
+            <p class="demo-note"><i class="fas fa-headphones"></i> All tracks play royalty-free piano music for demonstration</p>
+        </section>
+
+        <!-- Loading State -->
+        <div id="loading" class="loading">
+            <div class="spinner"><i class="fas fa-spinner fa-spin"></i></div>
+            <p>Loading artists...</p>
+        </div>
+
+        <!-- Artists Grid -->
+        <div id="artistsGrid" class="artists-grid"></div>
+
+        <!-- Instructions -->
+        <div class="instructions">
+            <h3><i class="fas fa-info-circle"></i> How to Use</h3>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <p>Click on any artist card</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <p>View their songs and albums</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <p>Click the play button to hear music</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <p>Use search to find specific artists</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><i class="fas fa-graduation-cap"></i> University Project</h4>
+                    <p>Music Catalog &copy; 2024</p>
+                    <p>Interactive Web Development Course</p>
+                </div>
+                <div class="footer-section">
+                    <h4><i class="fas fa-music"></i> About This Demo</h4>
+                    <p>This site uses mock data and royalty-free music for educational purposes only.</p>
+                    <p>All images from Unsplash, audio from SoundHelix.</p>
+                </div>
+                <div class="footer-section">
+                    <h4><i class="fas fa-code"></i> Technologies Used</h4>
+                    <p>HTML5, CSS3, JavaScript</p>
+                    <p>Font Awesome, Unsplash API</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Created for Educational Purposes | Not for Commercial Use</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
